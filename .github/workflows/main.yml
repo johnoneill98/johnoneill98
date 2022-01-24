@@ -13,7 +13,7 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v1.1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          credentials: ${{ secrets.AZURE_CREDENTIALS }}
       - name: Upgrade node images
         uses: Azure/cli@v1.0.0
         with:
