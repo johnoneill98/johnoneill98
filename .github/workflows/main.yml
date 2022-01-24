@@ -19,4 +19,4 @@ jobs:
       - name: Upgrade node images
         uses: Azure/cli@v1.0.0
         with:
-          inlineScript: az aks upgrade -g ${{secrets.RESOURCE_GROUP_NAME}} -n ${{secrets.AKS_CLUSTER_NAME}} --node-image-only --yes
+          inlineScript: az aks upgrade -g ${{ secrets.RESOURCE_GROUP_NAME }} -n ${{ secrets.AKS_CLUSTER_NAME }} --node-image-only --yes
